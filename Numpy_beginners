@@ -1,0 +1,146 @@
+
+
+# Import the libraries
+
+import time 
+import sys
+import numpy as np 
+
+import matplotlib.pyplot as plt
+
+# Plotting functions
+
+def Plotvec1(u, z, v):
+    
+    ax = plt.axes()
+    ax.arrow(0, 0, *u, head_width=0.05, color='r', head_length=0.1)
+    plt.text(*(u + 0.1), 'u')
+    
+    ax.arrow(0, 0, *v, head_width=0.05, color='b', head_length=0.1)
+    plt.text(*(v + 0.1), 'v')
+    ax.arrow(0, 0, *z, head_width=0.05, head_length=0.1)
+    plt.text(*(z + 0.1), 'z')
+    plt.ylim(-2, 2)
+    plt.xlim(-2, 2)
+
+def Plotvec2(a,b):
+    ax = plt.axes()
+    ax.arrow(0, 0, *a, head_width=0.05, color ='r', head_length=0.1)
+    plt.text(*(a + 0.1), 'a')
+    ax.arrow(0, 0, *b, head_width=0.05, color ='b', head_length=0.1)
+    plt.text(*(b + 0.1), 'b')
+    plt.ylim(-2, 2)
+    plt.xlim(-2, 2)
+    
+    
+    
+    
+# Create a python list
+a = ["0", 1, "two", "3", 4]
+
+# Print each element
+#print("a[0]:", a[0])
+#print("a[1]:", a[1])
+#print("a[2]:", a[2])
+#print("a[3]:", a[3])
+#print("a[4]:", a[4]) 
+
+
+# Create a numpy array
+a = np.array([0, 1, 2, 3, 4])
+#print(a)
+# Check the type of the array
+#print(type(a))
+# Check the type of the values stored in numpy array
+#print(a.dtype)
+
+# Create a numpy array
+b = np.array([3.1, 11.02, 6.2, 213.2, 5.2])
+#print(type(b))
+#print(b.dtype)
+
+
+# Create numpy array
+c = np.array([20, 1, 2, 3, 4])
+   #print(c)
+# Assign the first element to 100
+c[0] = 100
+#print(c)
+
+
+# Slicing the numpy array
+d = c[1:4]
+#print(d)
+
+
+# Set the fourth element and fifth element to 300 and 400
+c[3:5] = 300, 400
+#print(c)
+
+# Create the index list
+select = [0, 2, 3]
+
+# Use List to select elements
+d = c[select]
+#print(c)
+#print(d)
+c[select] = 100000
+#print(c)
+ 
+# Create a numpy array
+a = np.array([0, 1, 2, 3, 4])  
+    
+# Get the size of numpy array
+a.size
+    
+# Get the number of dimensions of numpy array
+a.ndim
+
+# Get the shape/size of numpy array
+a.shape
+
+# Create a numpy array
+a = np.array([1, -1,1000, -1])
+
+# Get the mean of numpy array
+mean = a.mean()
+#print(mean)
+# Create a numpy array
+b = np.array([-1, 2, 3, 4, 5])
+# Create a numpy array
+b = np.array([-1, 2, 3, 4, 5])
+# Get the smallest value in the numpy array
+min_b = b.min()
+max_c = b.max()
+#print(min_b, max_c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
